@@ -1,5 +1,46 @@
+
+
+:root {
+  --app-dark-layer-one: #141715;
+  --app-dark-layer-two: #1c211d;
+  --app-dark-layer-three: #272e28;
+  --app-dark-highlight: #3d453e;
+  --app-green-main: #14c741;
+  --app-green-main-light: #36e060;
+  --app-green-main-very-light: #45f570;
+  --app-green-secondary: #0bb85e;
+  --app-green-secondary-light: #08d46a;
+  --app-green-secondary-very-light: #24f287;
+  --app-green-dark: #19702f;
+  --app-green-dark-secondary: #1b663f;
+}
+
+body {
+  font-family: 'Glacial Indifference', sans-serif;
+}
+
+/* * {border: 2px dashed #FF0} */
+
 .App {
   text-align: center;
+  /* background: var(--app-dark-layer-one); */
+  background-image: url("./backgroundBlogGraphic2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  display: inline-grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px auto;
+  grid-gap: 0px;
+  justify-items: stretch;
+  align-items: stretch;
+  
+  overflow-x: hidden;
 }
 
 .App-logo {

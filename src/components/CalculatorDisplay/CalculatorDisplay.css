@@ -1,0 +1,85 @@
+
+
+
+
+
+
+.CalculatorDisplay-main {
+    /* grid-column-start: span 1; */
+    /* justify-self: stretch; */
+
+    /* width: 100%; */
+
+    /* border: 4px dashed #754 */
+
+    display: block;
+
+    /* position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -35%); */
+
+    width: 720px;
+    height: 41vh;
+    border-radius: 15px;
+    background: #1c211d;
+    border: 3px solid rgba(39, 46, 40, 0.35);
+
+    box-shadow: 
+        0px 3px 8px 2px rgba(15, 17, 16, 0.26),
+        0px 4px 5px -2px rgba(15, 17, 16, 0.45),
+        0px 0px 35px -12px rgba(15, 17, 16, 0.70);
+}
+
+.CalculatorDisplay-cover-photo {
+    width: 100%;
+    height: 150px;
+    border-radius: 14px;
+    background: url('./assets/calculator-display-decal-2-transparent.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+    margin: 0;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.CalculatorDisplay-cover-title {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    padding: 0 35px;
+    margin: 0;
+}
+
+
+
+
+/* Light Theme */
+
+
+.CalculatorDisplay-main-light {
+    /* grid-column-start: span 1; */
+    /* justify-self: stretch; */
+
+    /* width: 100%; */
+
+    /* border: 4px dashed #754 */
+
+    display: inline-block;
+
+    width: 720px;
+    height: 41vh;
+    border-radius: 15px;
+    background: #FFFFFF;
+    color: #FAFAFA;
+    border: 1px solid rgba(199, 206, 200, 0.35);
+
+    box-shadow: 
+        0px 3px 8px 2px rgba(215, 217, 216, 0.26),
+        0px 4px 5px -2px rgba(215, 217, 216, 0.45),
+        0px 0px 35px -12px rgba(215, 217, 216, 0.70);
+}
+
+
+

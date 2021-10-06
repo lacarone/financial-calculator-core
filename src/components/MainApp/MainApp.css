@@ -1,0 +1,20 @@
+
+
+
+
+
+
+.MainApp-main {
+
+    /* grid-column-start: span 1; */
+    /* justify-self: start; */
+    /* width: 430px; */
+    display: flex;
+    flex-direction: row;
+
+
+    /* border: 4px dashed #754 */
+}
+
+
+
