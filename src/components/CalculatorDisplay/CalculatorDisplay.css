@@ -20,7 +20,7 @@
     transform: translate(-50%, -35%); */
 
     width: 720px;
-    height: 41vh;
+    max-width: 90vw;
     border-radius: 15px;
     background: #1c211d;
     border: 3px solid rgba(39, 46, 40, 0.35);
@@ -52,7 +52,25 @@
     margin: 0;
 }
 
+.CalculatorDisplay-cover-close-button {
+    font-size: 26px;
+    color: #888888;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
 
+.CalculatorDisplay-cover-close-button:hover {
+    color: #999999;
+}
+
+.CalculatorDisplay-application-box {
+    min-height: 180px;
+    max-height: calc(100vh - 260px);
+    /* border: 3px dashed rgba(20,70,25,0.6); */
+    padding: 16px 35px;
+    text-align: left;
+}
 
 
 /* Light Theme */

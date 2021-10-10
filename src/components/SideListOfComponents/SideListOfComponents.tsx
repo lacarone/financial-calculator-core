@@ -24,7 +24,7 @@ function SideListOfComponents() {
           };
 
 
-          const calculators = {
+          const calculators: any = {
             "0": "Loan Interest",
             "1": "Compound Interest",
             "2": "Mortgage",
@@ -32,6 +32,46 @@ function SideListOfComponents() {
             "4": "CRE Cap Rate",
             "5": "Income Tax | Canada",
           }
+
+          interface CalculatorApp {
+            id: string,
+            name: string,
+            title: string,
+            iconName: string,
+          }
+
+          const calculatorApps: Array<CalculatorApp> = [
+            {
+              id: '0',
+              name: 'loan-interest-app',
+              title: 'Loan Interest',
+              iconName: 'iconLoanInterest',
+            },
+            {
+              id: '1',
+              name: 'compound-interest-app',
+              title: 'Compound Interest',
+              iconName: 'iconCompoundInterest',
+            },
+            {
+              id: '2',
+              name: 'mortgage-app',
+              title: 'Mortgage',
+              iconName: 'iconMortgage',
+            },
+            {
+              id: '3',
+              name: 'cre-noi-app',
+              title: 'CRE Net Income',
+              iconName: 'iconCRENetIncome',
+            },
+            {
+              id: '4',
+              name: 'cre-cap-rate-app',
+              title: 'CRE Cap Rate',
+              iconName: 'iconCRECapRate',
+            },
+          ]
 
 
     return (
@@ -59,9 +99,14 @@ function SideListOfComponents() {
               initial="hidden"
               animate="visible"
             >
-              {[0, 1, 2, 3, 4].map((index) => (
-                <motion.li key={index} className="item" variants={item}>
-                    <CalculatorListItem isActive={index==2?true:false} calculatorTitle={calculators[index]?calculators[index]:''} />
+              {calculatorApps.map((app) => (
+                <motion.li key={app.id} className="item" variants={item}>
+                    <CalculatorListItem 
+                      isActive={app.id==='2'?true:false} 
+                      calculatorName={app.name?app.name:'404'} 
+                      calculatorTitle={app.title?app.title:'[404: error loading calculator]'} 
+                      calculatorIcon={app.iconName?app.iconName:'404'} 
+                    />
                 </motion.li>
               ))}
             </motion.ul>

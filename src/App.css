@@ -5,6 +5,9 @@
   --app-dark-layer-two: #1c211d;
   --app-dark-layer-three: #272e28;
   --app-dark-highlight: #3d453e;
+  --app-green-core: #147830;
+  --app-green-core-light: #148f36;
+  --app-green-core-very-light: #10a138;
   --app-green-main: #14c741;
   --app-green-main-light: #36e060;
   --app-green-main-very-light: #45f570;
@@ -13,6 +16,10 @@
   --app-green-secondary-very-light: #24f287;
   --app-green-dark: #19702f;
   --app-green-dark-secondary: #1b663f;
+
+  --dark-glass-background: rgba(15, 15, 15, 0.36);
+  --dark-glass-light-background: rgba(45, 45, 45, 0.36);
+  --app-transparent-dark-component-hover-highlight: rgba(100, 100, 100, 0.26);
 }
 
 body {
@@ -76,4 +83,90 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/* UI core components definitions */
+
+.App-button-core {
+  border-radius: 12px;
+  padding: 16px 35px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  /* background: #000; */
+}
+
+.App-button-core-compact {
+  border-radius: 12px;
+  padding: 16px 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  /* background: #000; */
+}
+
+.App-button-core-compact-square {
+  border-radius: 12px;
+  padding: 16px 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  /* background: #000; */
+}
+
+.App-icon-button-core-compact-square {
+  border-radius: 12px;
+  padding: 10px 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  line-height: 0;
+  /* background: #000; */
+}
+
+.App-button-green-main {
+  background: var(--app-green-core);
+  color: #FFF;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.App-button-green-main:hover {
+  background: var(--app-green-core-light);
+  color: #FFF;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.App-button-transparent-dark {
+  color: #FDFEFD;
+}
+
+.App-button-transparent-dark:hover {
+  color: #FDFEFD;
+  background: var(--app-transparent-dark-component-hover-highlight);
+}
+
+.App-button-glass-dark {
+  color: #EFEFEF;
+  background: var(--dark-glass-background);
+}
+
+.App-button-glass-dark:hover {
+  color: #FDFEFD;
+  background: var(--app-transparent-dark-component-hover-highlight);
+}
+
+.App-button-glass-dark-light {
+  color: #EFEFEF;
+  background: var(--dark-glass-light-background);
+}
+
+.App-button-glass-dark-light:hover {
+  color: #FDFEFD;
+  background: var(--app-transparent-dark-component-hover-highlight);
 }

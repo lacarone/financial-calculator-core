@@ -10,9 +10,19 @@
     /* background: rgba(80, 80, 80, 0.05); */
     height: 100px;
     width: 100vw;
+    position: relative;
     
 
     /* border: 4px dashed #754 */
+}
+
+.NavbarHeader-github-btn {
+    display: inline-block;
+    /* float: right; */
+    position: absolute;
+    top: 50%;
+    right: 35px;
+    transform: translate(0%, -50%);
 }
 
 .NavbarHeader-logo {
