@@ -1,0 +1,82 @@
+
+
+
+
+
+.InputSlider-box {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 30px;
+
+    /* border: 2px dashed green; */
+}
+
+.InputSlider-box-with-label {
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    /* border: 2px dashed green; */
+}
+
+
+  
+
+
+.InputSlider-main {
+    -webkit-appearance: none;
+    width: 350px;
+    height: 15px;
+    border-radius: 5px;
+    border: 1px solid #121212;
+    background: var(--app-dark-layer-one);
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.InputSlider-main:hover {
+    opacity: 1;
+}
+
+.InputSlider-main::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 6px;
+    background: var(--app-green-core);
+    cursor: pointer;
+    box-shadow: var(--card-box-shadow-main-dark);
+}
+
+.InputSlider-main::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 6px;
+    background: var(--app-green-core);
+    cursor: pointer;
+    box-shadow: var(--card-box-shadow-main-dark);
+}
+
+.InputSlider-main:focus {
+    
+}
+
+.InputSlider-label {
+    position: absolute;
+    top: 0px;
+    color: #AAA;
+}
+
+.InputSlider-error-message {
+    position: absolute;
+    bottom: 2px;
+    color: var(--text-error-color-dark);
+}

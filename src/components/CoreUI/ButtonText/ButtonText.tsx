@@ -11,6 +11,11 @@ import './ButtonText.css';
 // this comment is totally random, this isn't the first component built on this project, its like 8th
 
 
+
+// props input
+// colorTheme: String
+// buttonText: String
+// addedClasses: additional classes
 function ButtonText(props: any) {
     let buttonColorTheme: string;
 
@@ -34,7 +39,7 @@ function ButtonText(props: any) {
         // the reason the ButtonText-main is last is because it should be able to overried all
         // the standard styles here, so in a way it has the power to customize itself if needed
         // for a very specific use
-        <button className={`App-button-core ${buttonColorTheme} ButtonText-main`}>
+        <button className={`App-button-core ${buttonColorTheme} ButtonText-main ${props.addedClasses?props.addedClasses:''}`}>
             {props.buttonText} 
         </button>
     )

@@ -20,6 +20,13 @@
   --dark-glass-background: rgba(15, 15, 15, 0.36);
   --dark-glass-light-background: rgba(45, 45, 45, 0.36);
   --app-transparent-dark-component-hover-highlight: rgba(100, 100, 100, 0.26);
+
+  --card-box-shadow-main: 0px 3px 8px 2px rgba(215, 217, 216, 0.26), 0px 4px 5px -2px rgba(215, 217, 216, 0.45), 0px 0px 35px -12px rgba(215, 217, 216, 0.70);
+  --card-box-shadow-main-dark: 0px 3px 8px 2px rgba(15, 17, 16, 0.26), 0px 4px 5px -2px rgba(15, 17, 16, 0.45), 0px 0px 35px -12px rgba(15, 17, 16, 0.70);
+
+  --card-box-shadow-secondary-dark: 0px 1px 4px 2px rgba(15, 17, 16, 0.26), 0px 2px 5px -2px rgba(15, 17, 16, 0.45);
+
+  --text-error-color-dark: #991d14;
 }
 
 body {
@@ -88,6 +95,10 @@ body {
 
 /* UI core components definitions */
 
+button {
+  font-size: 14px;
+}
+
 .App-button-core {
   border-radius: 12px;
   padding: 16px 35px;
@@ -132,14 +143,12 @@ body {
   background: var(--app-green-core);
   color: #FFF;
   font-weight: 500;
-  font-size: 14px;
 }
 
 .App-button-green-main:hover {
   background: var(--app-green-core-light);
   color: #FFF;
   font-weight: 500;
-  font-size: 14px;
 }
 
 .App-button-transparent-dark {
@@ -169,4 +178,13 @@ body {
 .App-button-glass-dark-light:hover {
   color: #FDFEFD;
   background: var(--app-transparent-dark-component-hover-highlight);
+}
+
+.ButtonIcon-icon-styles {
+  font-size: 26px;
+  color: #888888;
+}
+
+.ButtonIcon-icon-styles:hover {
+  color: #999999;
 }

@@ -1,0 +1,16 @@
+
+
+
+
+
+.ButtonIconText-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ButtonIconText-icon {
+    
+    font-size: 16px;
+    padding-right: 8px;
+}

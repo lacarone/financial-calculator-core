@@ -4,6 +4,10 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { motion } from 'framer-motion';
 import ButtonText from '../CoreUI/ButtonText/ButtonText';
+import ButtonIcon from '../CoreUI/ButtonIcon/ButtonIcon';
+import ButtonIconText from '../CoreUI/ButtonIconText/ButtonIconText';
+import InputText from '../CoreUI/InputText/InputText';
+import InputSlider from '../CoreUI/InputSlider/InputSlider';
 import './CalculatorDisplay.css';
 
 
@@ -26,18 +30,33 @@ function CalculatorDisplay() {
       <div className="CalculatorDisplay-cover-photo">
         <h2 className="CalculatorDisplay-cover-title">Mortgage Calculator 
         </h2>
-        <button className="CalculatorDisplay-cover-close-button App-icon-button-core-compact-square App-button-glass-dark-light">
-          <FontAwesomeIcon icon={faTimes} />
-        </button>
+        
+        <ButtonIcon buttonIcon={faTimes} colorTheme="glass-dark" addedClasses="CalculatorDisplay-cover-close-button" />
       </div>
 
       <div className="CalculatorDisplay-application-box">
         {/* <button className="App-button-core App-button-green-main">Github</button> */}
-        <ButtonText buttonText="Github" />
-        <ButtonText buttonText="Github" colorTheme="transparent-dark" />
+        {/* <ButtonText buttonText="GitHub" />
+        <ButtonText buttonText="GitHub" colorTheme="transparent-dark" /> */}
+
+        {/* <ButtonIconText colorTheme="transparent-dark" buttonText="GitHub" buttonIcon={faCoffee} /> */}
+
+        <InputText inputLabel="Annual Net Operating Income some more text" />
+        <InputText inputLabel="Real Estate MLS Number" inputError="Please enter the MLS number" />
+
+        <br /><br /><br />
+
+        <InputText />
+
+        <br /><br /><br />
+
+        <InputSlider inputLabel="Real Estate MLS Number" inputError="Please enter the MLS number"  />
+
+        <br /><br />
+        <ButtonText buttonText="GitHub" />
+        <ButtonText buttonText="GitHub" colorTheme="transparent-dark" /> 
 
       </div>
-      {/* <button className="App-button-core-compact-square App-button-glass-dark-light">X</button> */}
     </motion.div>
   )
 

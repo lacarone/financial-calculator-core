@@ -1,0 +1,63 @@
+
+
+
+
+
+.InputText-box {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 30px;
+
+    /* border: 2px dashed green; */
+}
+
+.InputText-box-with-label {
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    /* border: 2px dashed green; */
+}
+
+.InputText-main {
+    padding: 16px;
+    background-color: var(--app-transparent-dark-component-hover-highlight);
+    border: 3px solid transparent;
+    border-radius: 16px;
+    font-size: 14px;
+    color: #FFF;
+    box-shadow: var(--card-box-shadow-secondary-dark);
+    transition: all 0.1s linear;
+    width: calc(100% - 38px);
+
+    /* temp, testing styles */
+    margin-right: 16px;
+
+}
+
+
+.InputText-main:focus {
+    background-color: var(--app-dark-layer-one);
+    box-shadow: none;
+    outline: none;
+    /* border-radius: 30px; */
+    /* border: 3px solid var(--app-green-dark-secondary); */
+    border: 3px solid var(--app-dark-layer-three);
+}
+
+.InputText-label {
+    position: absolute;
+    top: 0px;
+    color: #AAA;
+}
+
+.InputText-error-message {
+    position: absolute;
+    bottom: 2px;
+    color: var(--text-error-color-dark);
+}
